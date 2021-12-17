@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+html{
+    font-size: 14px;
+ 
+}
+img{
+    width: 100%;
+    
+}
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../kepek/back.webp")
+    
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+    color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 0px 20px;
+}
+.header_mobil{
+    display:none;
+}
+.navigation{
+    position: sticky;
+    background-color: black;
+
+}
+
+.navigation{
+
+}
+
+.navigation ul{
+    list-style-type: none;
+}
+.navigation ul li{
+    text-align: center;
+    border-bottom:  1px solid #232323;
+    float: left;
+
+}
+.navigation ul li a:hover{
+    color: white;
+}
+.navigation ul li a{
+    color:orange;
+    font-size: 3rem;
+    display:block;
+    padding:20px 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.contents{
+    font-size: 1.8rem;
+}
+.content{
+    margin: 20px;
+} 
+.content p{
+    padding: 10px;
+    line-height: 1.5;
+    
+}
+.navigation::after, .contents::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@media (min-width:1px)
+{
+    }
+    .header_mobil{
+        display:none;
+    }
+    .navigation ul li{
+        width:24.9999%;
+        float:left;
+    
+    }
+    .content{
+        width:49.9999%;
+        float:left; 
+    }
+    .content p{
+        font-size:1.2rem;
+    }
+}
+@media (min-width:601px)
+{
+    .header_mobil{
+        display: block;
+    }
+    .content p{
+        font-size:1rem;
+    }
+    .content{
+        width:24.9999%;
+        float:left; 
+    }
+    .navigation ul li{
+        float: left;
+
+    }
+    .content img{
+        width:49.9999%;
+        float:left; 
+        padding: 10px 10px 0 10px;
+    }
+}
